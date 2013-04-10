@@ -1,0 +1,3 @@
+path
+ant release
+pause
