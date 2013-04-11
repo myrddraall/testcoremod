@@ -7,7 +7,8 @@ import cp.mods.core.api.type.item.SingularItemsType;
 
 public enum SimpleTestItems implements SingularItemsType
 {
-    TEST_ITEM(9000);
+    TEST_ITEM(9000),
+    TEST_ITEM2(9001);
 
     private int itemId;
     private Item item;

@@ -16,12 +16,18 @@ public class SimpleTestItemsInit implements ITypeInitializer
         ItemStack stack;
 
         item = new SimpleTestItem(SimpleTestItems.TEST_ITEM.getItemId());
-        
         item.setName(ModInfo.MOD_ID + ":testitem");
         GameRegistry.registerItem(item, item.getUnlocalizedName());
         stack = new ItemStack(item);
         SimpleTestItems.TEST_ITEM.setItem(item);
         SimpleTestItems.TEST_ITEM.setItemStack(stack);
+        
+        item = new SimpleTestItem(SimpleTestItems.TEST_ITEM2.getItemId());
+        item.setName(ModInfo.MOD_ID + ":testitem2");
+        GameRegistry.registerItem(item, item.getUnlocalizedName());
+        stack = new ItemStack(item);
+        SimpleTestItems.TEST_ITEM2.setItem(item);
+        SimpleTestItems.TEST_ITEM2.setItemStack(stack);
     }
 
 }
