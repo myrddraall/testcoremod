@@ -1,7 +1,7 @@
 package cp.mods.TestCoreMod.item;
 
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import cp.mods.TestCoreMod.ModInfo;
 import cp.mods.TestCoreMod.api.item.SimpleTestItems;
 import cp.mods.core.api.type.IEnumerableType;
 import cp.mods.core.api.type.ITypeInitializer;
@@ -12,11 +12,12 @@ public class SimpleTestItemsInit implements ITypeInitializer
     @Override
     public void initialize(Class<? extends IEnumerableType> typeClass)
     {
-        Item item;
+        SimpleTestItem item;
         ItemStack stack;
 
         item = new SimpleTestItem(SimpleTestItems.TEST_ITEM.getItemId());
-        item.setUnlocalizedName("testitem");
+        
+        item.setName(ModInfo.MOD_ID + ":testitem");
         GameRegistry.registerItem(item, item.getUnlocalizedName());
         stack = new ItemStack(item);
         SimpleTestItems.TEST_ITEM.setItem(item);
