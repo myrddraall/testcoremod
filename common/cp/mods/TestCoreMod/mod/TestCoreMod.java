@@ -1,7 +1,8 @@
-package cp.mods.TestCoreMod;
+package cp.mods.TestCoreMod.mod;
 
-import cp.mods.TestCoreMod.proxy.CommonProxy;
-import cp.mods.core.mod.ModBase;
+import cp.mods.CoreMod.core.mod.ModBase;
+import cp.mods.TestCoreMod.ModInfo;
+import cp.mods.TestCoreMod.mod.proxy.CommonProxy;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.PostInit;

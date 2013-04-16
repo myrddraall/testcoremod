@@ -1,7 +1,7 @@
-package cp.mods.TestCoreMod.network;
+package cp.mods.TestCoreMod.mod.network;
 
-import cp.mods.core.network.packet.IPacket;
-import cp.mods.core.network.packet.IPacketType;
+import cp.mods.CoreMod.core.network.packet.IPacket;
+import cp.mods.CoreMod.core.network.packet.IPacketType;
 
 public enum ItemUpdateChannel implements IPacketType
 {
